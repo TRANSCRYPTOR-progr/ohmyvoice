@@ -1,0 +1,31 @@
+# Binaries and compiled executables
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Whisper binaries and CUDA runtimes
+bin/
+
+# Whisper GGML models (heavy binary files)
+models/*.bin
+*.bin
+
+# Temporary and recorded audio files
+temp_voice.wav
+*.wav~
+*.tmp
+*.log
+
+# Windows and IDE files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosv
+*.sln.docstates

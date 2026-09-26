@@ -1,0 +1,8 @@
+{
+  "model": "ggml-small.bin",
+  "language": "ru",
+  "threads": 6,
+  "sound_feedback": true,
+  "autostart": false,
+  "hotkey": "caps_lock"
+}
