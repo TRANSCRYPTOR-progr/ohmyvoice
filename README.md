@@ -97,10 +97,11 @@ powershell -ExecutionPolicy Bypass -File .\setup_models.ps1 -Model all
 ```
 
 ### 3. Бинарные зависимости CUDA
-Для работы GPU-ускорения в папку `bin/` помещаются:
-- `whisper-cli.exe` (скомпилированный с поддержкой CUDA)
-- `ggml-cuda.dll`, `ggml-base.dll`, `ggml-cpu.dll`
-- Библиотеки рантайма CUDA: `cublas64_12.dll`, `cublasLt64_12.dll`, `cudart64_12.dll`
+Запустите скрипт автоматической загрузки и распаковки движка Whisper и рантайма CUDA 12.4 в папку `bin/`:
+```powershell
+powershell -ExecutionPolicy Bypass -File .\setup_cuda_binaries.ps1
+```
+Скрипт автоматически скачает официальный релиз `whisper-cli` с поддержкой CUDA 12.4 и поместит все нужные библиотеки в папку `bin/`.
 
 ---
 
